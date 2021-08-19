@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    font-family:Georama;
+    font-transform:uppercase;
+
+}
+.stylenav{
+    background-color: rgba(132, 103, 184,0.8);
+    font-weight: normal;
+}
+.btn-color{
+    outline: 1px white;
+    background-color: rgba(255,255,255,0.5);
+}
+.imgsize{
+    width: 1440px;
+    height: 720px;
+}
+.text-trajetoria{
+    font-transform: uppercase;
+    font-weight:bold;
+}
+.size-gif{
+    height:350px;
+    width:625px;
+}
