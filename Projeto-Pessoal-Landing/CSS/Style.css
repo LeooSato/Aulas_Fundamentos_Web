@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 *{
     padding:0px;
     margin:0px;
@@ -6,23 +7,131 @@
     font-transform:uppercase;
 
 }
-.stylenav{
-    background-color: rgba(132, 103, 184,0.8);
+.stylenav{ background-color: #126589;
     font-weight: normal;
 }
-.btn-color{
-    outline: 1px white;
-    background-color: rgba(255,255,255,0.5);
+.inp{  
+    font-family: 'Poppins', sans-serif;
+    font-size: 177rem;
 }
-.imgsize{
-    width: 1440px;
-    height: 720px;
+a {
+  font-family: 'Poppins', sans-serif;
+  color: #372a25;
+  font-size: 1rem;
 }
-.text-trajetoria{
-    font-transform: uppercase;
-    font-weight:bold;
+
+.text-inner{
+    font-size: 3.2rem;
+    color: rgb(150, 191, 255);
+    -webkit-text-stroke: 1px black;
+    text-transform: uppercase;
+    font-style: italic;
 }
-.size-gif{
-    height:350px;
-    width:625px;
+.borders:active{
+    outline: 0;
+}
+.d-md-block p{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(150, 191, 255);
+    font-size: 2rem;
+    font-style: italic;
+    -webkit-text-stroke: 1px black;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #53b2ff;
+    font-size: 1.2rem;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: #000002;
+}
+
+h1 span {
+  color: #ff7d56;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font: weight 2px;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(148, 189, 255);
+  font-style: italic;
+  -webkit-text-stroke: 1px black;
+  font-style:bold;
+  text-transform: uppercase;
+}
+
+h4{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #000002;
+  font-size: 1.8rem
+}
+
+h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #000002;
+  font-size: 1.1rem
+}
+
+.centralizar-links {
+  margin: 0 auto;
+}
+
+.cornavbar {
+  background-color: #fff0e9;
+}
+
+.botaonavbar {
+  color: #fff3e6;
+  background-color: #f99c80;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.botaonavbar:hover{
+  color: #fff3e6;
+  background-color: #ff7d56;
+  transition: 0.4s;
+}
+
+.chamadabox{
+  padding-top: 5rem;
+}
+
+.boxtitulo {
+  border-radius: 0 0 20px 20px;
+}
+
+.features{
+  color: #daaa9d;
+  background-color: #fff0e9 ;
+  padding: 5px 15px; 
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.fototexto{
+  margin-top: 8rem;
+}
+
+.rowsfototexto  {
+  margin-bottom: 8rem;
+
+}
+
+.espacotexto {
+  padding-top: 4rem;
+}
+
+.luminosity{
+    Height:350px;
 }
