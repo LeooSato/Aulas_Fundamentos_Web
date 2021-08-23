@@ -1,97 +1,306 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bgcnav">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-</nav>
-
-<div class="container">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="comida-desperdicio.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="comida.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="6b8b8c877f5e91b6891336eeafe71ee7.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-<div class="row pt-5">
-    <div class="col-md-6">
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page - Bootstrap - Gabriel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="
+        navbar navbar-expand-lg navbar-light
+        container
+        cornavbar
+        sticky-top
+      "
+    >
+      <a class="navbar-brand" href="#"
+        ><img src="./img/logo.png" alt="Logotipo" height="30" loading="lazy"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto centralizar-links">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn botaonavbar my-2 my-sm-0" type="submit">
+            Get Started
+          </button>
         </form>
-    </div>
-    <div class="col-md-6">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.6955387148446!2d-46.63824538502061!3d-23.651072184638473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ad977a71513%3A0x60375ae291289f82!2sR.%20Jos%C3%A9%20de%20Alc%C3%A2ntara%2C%20510%20-%20Vila%20do%20Encontro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004324-000!5e0!3m2!1spt-BR!2sbr!4v1629381584187!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-</div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+      </div>
+    </nav>
 
+    <section class="container">
+      <div class="row cornavbar boxtitulo">
+        <div class="col-md-4 chamadabox">
+          <!-- coluna esquerda -->
+          <h1 class="mb-4">
+            Lorem <br />
+            ipsum dolor <br />
+            sit <span>amet</span>
+          </h1>
+          <h3 class="mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+            facilis!
+          </h3>
+          <button type="button" class="btn botaonavbar mb-4">
+            Get Started
+          </button>
+          <img src="./img/logos.jpg" alt="Logos de empresas" />
+        </div>
+
+        <div class="col-md-8">
+          <!-- coluna direita -->
+          <img src="./img/imagem-1.jpg" alt="Foto da mulher" width="100%" />
+        </div>
+      </div>
+
+      <div class="text-center my-5">
+        <span class="features">features</span>
+        <h4 class="my-4">Our Core Feature</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Dignissimos earum explicabo odio voluptatum, rem impedit magni quae
+          tempore.
+        </p>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-md-3">
+          <div class="d-flex flex-column">
+            <img
+              src="./img/icon-1.jpg"
+              height="auto"
+              alt="Icone 1"
+              class="align-self-center mb-3"
+            />
+            <h5 class="text-center mb-3 mb-4">Lorem, ipsum dolor.</h5>
+            <p class="text-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates quibusdam omnis
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex flex-column">
+            <img
+              src="./img/icon-2.jpg"
+              height="auto"
+              alt="Icone 1"
+              class="align-self-center mb-3"
+            />
+            <h5 class="text-center mb-4">Lorem, ipsum dolor.</h5>
+            <p class="text-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates quibusdam omnis
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex flex-column">
+            <img
+              src="./img/icon-3.jpg"
+              height="auto"
+              alt="Icone 1"
+              class="align-self-center mb-3"
+            />
+            <h5 class="text-center mb-4">Lorem, ipsum dolor.</h5>
+            <p class="text-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates quibusdam omnis
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex flex-column">
+            <img
+              src="./img/icon-4.jpg"
+              height="auto"
+              alt="Icone 1"
+              class="align-self-center mb-3"
+            />
+            <h5 class="text-center mb-4">Lorem, ipsum dolor.</h5>
+            <p class="text-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates quibusdam omnis
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row fototexto rowsfototexto">
+        <div class="col-md-6">
+          <img src="./img/celular.jpg" alt="Celular" />
+        </div>
+        <div class="col-md-6 espacotexto">
+          <h2>
+            Lorem ipsum dolor <br />
+            sit amet consectetur adipisicing <br />
+            elit. Similique, earum!
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing <br />
+            elit. Incidunt amet aperiam porro, fugit facilis vel quasi nobis
+            quaerat?
+          </p>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+          <br />
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+          <br />
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>
+            Lorem ipsum dolor <br />
+            sit amet consectetur adipisicing <br />
+            elit. Similique, earum!
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing <br />
+            elit. Incidunt amet aperiam porro, fugit facilis vel quasi nobis
+            quaerat?
+          </p>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+          <br />
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+          <br />
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+        <div class="col-md-6">
+          <img src="./img/skeleton.jpg" alt="Celular" height="300" />
+        </div>
+      </div>
+
+      <div class="row fototexto rowsfototexto">
+        <div class="col-md-6">
+          <img src="./img/celular-2.jpg" alt="Celular" />
+        </div>
+        <div class="col-md-6 espacotexto">
+          <h2>
+            Lorem ipsum dolor <br />
+            sit amet consectetur adipisicing <br />
+            elit. Similique, earum!
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing <br />
+            elit. Incidunt amet aperiam porro, fugit facilis vel quasi nobis
+            quaerat?
+          </p>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+          <br />
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+          <br />
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+      </div>
+
+      <div class="text-center my-5">
+        <span class="features">pricing</span>
+        <h4 class="my-4">Choose your packet</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Dignissimos earum explicabo odio voluptatum, rem impedit magni quae
+          tempore.
+        </p>
+      </div>
+
+      <!-- cards de preço -->
+      <div class="row my-5">
+        <div class="col-md-4">
+          <div class="d-flex flex-column">
+            <h5 class="text-center font-weight-bold">Basic</h5>
+            <img
+              src="./img/emote-1.jpg"
+              height="auto"
+              alt="Icone 1"
+              class="align-self-center mb-3"
+            />
+            <h5 class="text-center mb-3 mb-4">$19</h5>
+            <p class="text-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates quibusdam omnis
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex flex-column">
+            <h5 class="text-center font-weight-bold">Pro</h5>
+            <img
+              src="./img/emote-2.jpg"
+              height="auto"
+              alt="Icone 1"
+              class="align-self-center mb-3"
+            />
+            <h5 class="text-center mb-4">$49</h5>
+            <p class="text-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates quibusdam omnis
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex flex-column">
+            <h5 class="text-center font-weight-bold">Unlimited</h5>
+            <img
+              src="./img/emote-3.jpg"
+              height="auto"
+              alt="Icone 1"
+              class="align-self-center mb-3"
+            />
+            <h5 class="text-center mb-4">$99</h5>
+            <p class="text-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates quibusdam omnis
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
